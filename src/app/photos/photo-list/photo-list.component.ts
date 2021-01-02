@@ -9,8 +9,8 @@ import { PhotoService } from '../photo/photo.service';
   styleUrls: ['./photo-list.component.css'],
 })
 export class PhotoListComponent implements OnInit {
-  title = 'AluraPic';
   photos: Photo[] = [];
+  filter: string = '';
   constructor(private photoService: PhotoService, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {

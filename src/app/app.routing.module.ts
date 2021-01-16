@@ -3,14 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './core/auth/auth.guard';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { SingInComponent } from './home/singin/singin.component';
-import { SingUpComponent } from './home/singup/singup.component';
+import { SignUpComponent } from './home/signup/singup.component';
 import { PhotoFormComponent } from './photos/photo-form/photo-form.component';
 import { PhotoListComponent } from './photos/photo-list/photo-list.component';
 import { PhotoListResolver } from './photos/photo-list/photo-list.resolver';
 
 const routes: Routes = [
   { path: '', component: SingInComponent, canActivate: [AuthGuard] },
-  { path: 'signup', component: SingUpComponent },
+  { path: 'signup', component: SignUpComponent },
   {
     path: 'user/:userName',
     component: PhotoListComponent,

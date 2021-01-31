@@ -7,8 +7,8 @@ import { SignupService } from './signup.service';
 import { UserNotTakenValidatorService } from './user-not-taken.validator.service';
 
 @Component({
-  templateUrl: './singup.component.html',
-  styleUrls: ['./singup.component.css'],
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css'],
 })
 export class SignUpComponent implements OnInit {
   signupForm: FormGroup;
